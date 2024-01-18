@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import clientPromise from '@/lib/mongodb';
 import { revalidatePath } from "next/cache";
-import Container from "./container";
+import Container from "../../components/voting/container";
 
 async function vote(color: string) {
   'use server';

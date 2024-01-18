@@ -10,6 +10,8 @@
     "server": "node -r dotenv/config src/server/server.mjs"
   },
   "dependencies": {
+    "@nivo/core": "^0.84.0",
+    "@nivo/pie": "^0.84.0",
     "chart.js": "^4.4.1",
     "dotenv": "^16.3.1",
     "mongodb": "^3.5.9",

@@ -1,8 +1,5 @@
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
-import { Doughnut } from 'react-chartjs-2';
+import ChartJSChart from '@/components/chartjs/chart';
 import clientPromise from '@/lib/mongodb';
-
-ChartJS.register(ArcElement, Tooltip, Legend);
 
 export default async function SSRChartJS() {
   const client = await clientPromise;
@@ -29,7 +26,7 @@ export default async function SSRChartJS() {
     <main className="flex min-h-screen flex-col items-center gap-8 p-24">
       <h1 className="font-bold text-xl mb-4">React ChartJS</h1>
       <div className="max-w-screen-md">
-        <Doughnut data={data} />
+        <ChartJSChart data={data} />
       </div>
     </main>
   );

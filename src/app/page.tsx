@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import clientPromise from '@/lib/mongodb';
-import Container from "./container";
+import Container from "../components/root/container";
 
 export default async function Home() {
   const client = await clientPromise;
