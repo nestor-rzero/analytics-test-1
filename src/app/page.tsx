@@ -1,6 +1,5 @@
-import { useMemo } from "react";
+import { useMemo } from 'react';
 import clientPromise from '@/lib/mongodb';
-import { revalidatePath } from "next/cache";
 import Container from "./container";
 
 export default async function Home() {
